@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Clientes</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🔮 GESTIÓN DE CLIENTES</h1>
+
+    <div class="container">
+        <!-- FORMULARIO -->
+        <div class="form-group">
+            <input type="number" id="id" placeholder="ID del Cliente">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="text" id="apellido" placeholder="Apellido">
+            <input type="date" id="fecha">
+            <button onclick="crearCliente()">Crear</button>
+        </div>
+
+        <!-- TABLA -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>F. Nacimiento</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaClientes"></tbody>
+        </table>
+    </div>
+
+    <!-- JS -->
+    <script src="cliente.js"></script>
+    <script src="crud.js"></script>
+
+</body>
+</html>
+
+
